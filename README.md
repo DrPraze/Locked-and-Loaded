@@ -10,7 +10,7 @@ You are locked in a room. There is **only one way** to escape which is through a
 
 ___
 
-Note: The files are called using os.system. So in order to play the game, you have to set Python2 as the default application for .py file
+Note: The files are called using `os.system()`. So in order to play the game, you have to set Python2 as the default application for .py file
 
 I made this game with 
 Declan Kelly, Alston Sanford, Keven Mahabeer and Matthew Kaminski
