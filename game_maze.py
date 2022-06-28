@@ -1,11 +1,11 @@
-#! python2
+#! python3
 # "Maze_Game" By: Trung
 
 # ----------------------------------------------------------------------------------------------------------------------
 #                            Import Modules, Create Initial Canvas, and Begin Initial Code
 # ----------------------------------------------------------------------------------------------------------------------
 
-from Tkinter import *
+from tkinter import *
 # import os
 # import time
 # import webbrowser
@@ -120,7 +120,7 @@ def make_final_path(): # Make path at the final row (top row)
 
     # Change Pixel appearance
     current_pix = next_pix
-    maze_list[current_pix] = white_square
+    maze_list[int(current_pix)] = white_square
 
 
 def make_random_path():  # Make random path to the final line
@@ -157,7 +157,7 @@ def make_random_path():  # Make random path to the final line
 
     # Change Pixel appearance
     current_pix = next_pix
-    maze_list[current_pix] = white_square
+    maze_list[int(current_pix)] = white_square
 
     # Position of current and next Pixel
     # print current_direction, next_pix, current_pix
@@ -207,11 +207,11 @@ def move(direction):
         next_position = current_position + 1
 
     # Change last position to normal (not triangle)
-    maze_list[current_position] = white_square
+    maze_list[int(current_position)] = white_square
 
     # Out of range error
     try:
-        if maze_list[next_position] == white_square:
+        if maze_list[int(next_position)] == white_square:
             current_position = next_position
     except UnboundLocalError:
         current_position = current_position
@@ -226,10 +226,10 @@ def move(direction):
 
 
 def display_current_postition(n):  # Display current position with triangle
-    if maze_list[n] == triangle:
-        maze_list[n] = white_square
+    if maze_list[int(n)] == triangle:
+        maze_list[int(n)] = white_square
     else:
-        maze_list[n] = triangle
+        maze_list[int(n)] = triangle
 
 
 def maze_ready():  # Maze ready to show to the player
