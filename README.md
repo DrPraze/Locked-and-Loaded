@@ -1,5 +1,5 @@
 # Lock-and-Load
-This is an Escape room theme game made with Python 2.7
+This is an Escape room theme game
 
 ![image](https://user-images.githubusercontent.com/39042628/63475995-33143900-c44d-11e9-9fa0-64af87ee7ff0.png)
 
@@ -10,7 +10,9 @@ You are locked in a room. There is **only one way** to escape which is through a
 
 ___
 
-Note: The files are called using `os.system()`. So in order to play the game, you have to set Python2 as the default application for .py file, `disambig_home_screen.py` is the first file to run. 
+Note: `disambig_home_screen.py` is the first file to run. 
 
-I made this game with 
+Trung made this game with 
 Declan Kelly, Alston Sanford, Keven Mahabeer and Matthew Kaminski
+
+I upgraded it to python3 and added some new features and improved the workflow 
