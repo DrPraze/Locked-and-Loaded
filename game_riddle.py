@@ -4,7 +4,7 @@
 #                            Import Modules, Create Initial Canvas, and Begin Initial Code
 # ----------------------------------------------------------------------------------------------------------------------
 
-from Tkinter import *
+from tkinter import *
 # import os
 # import time
 # import webbrowser
